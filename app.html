@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mata Mosquisto!</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="app.js"></script>
+    </head>
+
+    <body onresize="realTimePosition()">
+        
+        <div class="painel">
+            <div class="vida">
+                <img id='heart1' src="imagens/coracao_cheio.png">
+                <img id='heart2' src="imagens/coracao_cheio.png">
+                <img id='heart3' src="imagens/coracao_cheio.png">
+            </div>
+        </div>
+        
+        
+        <div><h1 class="textcenter">Time left: <span id="timer"></span></h1></div>
+
+    <script>
+        
+        var mosquitoCreate = setInterval(function(){
+            realTimePosition()
+            randomMosquito()
+        }, timeGameMosquito)
+
+    </script>   
+    </body>
+
+</html>
